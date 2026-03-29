@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa Vocacional Austin</title>
+  <meta
+    name="description"
+    content="Sistema de orientación vocacional y personal para estudiantes de los últimos años del nivel secundario."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">Orientación vocacional y personal</p>
+      <h1>Mapa Vocacional Austin</h1>
+      <p class="header-copy">
+        Un recorrido digital para que cada estudiante se conozca mejor, explore opciones
+        y construya evidencia sobre sus intereses, fortalezas y próximos pasos.
+      </p>
+    </div>
+    <div class="header-panel" id="session-summary">
+      <span class="status-pill" id="mode-pill">Modo demo</span>
+      <button class="ghost-button hidden" id="logout-button" type="button">Cerrar sesión</button>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <footer class="app-footer">
+    <p>Versión HTML preparada para demo local y despliegue productivo con autenticación y roles.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="./config.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
